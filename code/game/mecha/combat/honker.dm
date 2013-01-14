@@ -62,7 +62,7 @@
 	var/output = {"<html>
 						<head><title>[src.name] data</title>
 						<style>
-						body {color: #00ff00; background: #32CD32; font-family:"Courier",monospace; font-size: 12px;}
+						body {color: #00ff00; background: #32CD32; font-family:"Consolas",monospace; font-size: 12px;}
 						hr {border: 1px solid #0f0; color: #fff; background-color: #000;}
 						a {padding:2px 5px;;color:#0f0;}
 						.wr {margin-bottom: 5px;}

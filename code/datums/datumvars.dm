@@ -298,12 +298,12 @@ client
 		html += {"<style>
 	body
 	{
-		font-family: Verdana, sans-serif;
+		font-family: Tahoma, sans;
 		font-size: 9pt;
 	}
 	.value
 	{
-		font-family: "Courier New", monospace;
+		font-family: "Consolas", monospace;
 		font-size: 8pt;
 	}
 	</style>"}
