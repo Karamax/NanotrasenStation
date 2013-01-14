@@ -280,42 +280,6 @@
 	icon_state = "id"
 	item_state = "syringe_kit"
 
-/obj/item/weapon/storage/firstaid
-	name = "first-aid kit"
-	desc = "It's an emergency medical kit for those serious boo-boos."
-	icon_state = "firstaid"
-	throw_speed = 2
-	throw_range = 8
-	var/empty = 0
-
-/obj/item/weapon/storage/firstaid/fire
-	name = "fire first-aid kit"
-	desc = "It's an emergency medical kit for when the toxins lab <i>-spontaneously-</i> burns down."
-	icon_state = "ointment"
-	item_state = "firstaid-ointment"
-
-/obj/item/weapon/storage/firstaid/regular
-	icon_state = "firstaid"
-
-/obj/item/weapon/storage/syringes
-	name = "syringes"
-	desc = "A box full of syringes."
-	desc = "A biohazard alert warning is printed on the box"
-	icon_state = "syringe"
-	foldable = /obj/item/stack/sheet/cardboard	//BubbleWrap
-
-/obj/item/weapon/storage/firstaid/toxin
-	name = "toxin first aid"
-	desc = "Used to treat when you have a high amoutn of toxins in your body."
-	icon_state = "antitoxin"
-	item_state = "firstaid-toxin"
-
-/obj/item/weapon/storage/firstaid/o2
-	name = "oxygen deprivation first aid"
-	desc = "A box full of oxygen goodies."
-	icon_state = "o2"
-	item_state = "firstaid-o2"
-
 /obj/item/weapon/storage/flashbang_kit
 	name = "flashbangs (WARNING)"
 	desc = "<B>WARNING: These devices are extremely dangerous and can cause blindness or deafness in repeated use.</B>"
@@ -430,17 +394,6 @@
 	item_state = "toolbox_syndi"
 	origin_tech = "combat=1;syndicate=1"
 	force = 7.0
-
-/obj/item/weapon/storage/bible
-	name = "bible"
-	desc = "A holy book." //BS12 EDIT
-	icon_state ="bible"
-	throw_speed = 1
-	throw_range = 5
-	w_class = 3.0
-	flags = FPRINT | TABLEPASS
-	var/mob/affecting = null
-	var/deity_name = "Christ"
 
 /obj/item/weapon/storage/bible/booze
 	name = "bible"
