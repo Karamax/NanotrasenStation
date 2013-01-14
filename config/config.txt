@@ -99,7 +99,7 @@ ALLOW_ADMIN_OOCCOLOR
 ALLOW_VOTE_RESTART
 
 ## allow players to initate a mode-change start
-# ALLOW_VOTE_MODE
+ALLOW_VOTE_MODE
 
 ## min delay (seconds) between voting sessions (default 10 minutes)
 VOTE_DELAY 600
@@ -124,7 +124,7 @@ ALLOW_AI
 # DONT_DEL_NEWMOB
 
 ## set a hosted by name for unix platforms
-HOSTEDBY tehdrama
+HOSTEDBY nanotrasen
 
 ## Set to jobban "Guest-" accounts from Captain, HoS, HoP, CE, RD, CMO, Warden, Security, Detective, and AI positions.
 ## Set to 1 to jobban them from those positions, set to 0 to allow them.
@@ -138,13 +138,13 @@ GUEST_JOBBAN 1
  SERVER nanotrasen.ru:2506
 
 ## forum address
- FORUMURL http://nanotrasen.ru/
+ FORUMURL http://nanotrasen.ru/forums
 
 ## Wiki address
  WIKIURL http://nanotrasen.ru/w/index.php
 
 ## Ban appeals URL - usually for a forum or wherever people should go to contact your admins.
- BANAPPEALS http://nanotrasen.ru/
+ BANAPPEALS http://nanotrasen.ru/forums
 
 ## In-game features
 ## spawns a spellbook which gives object-type spells instead of verb-type spells for the wizard
@@ -161,7 +161,7 @@ FORBID_SINGULO_POSSESSION
 #POPUP_ADMIN_PM
 
 ##What address should banned people appeal ther ban at?  Remember to escape the characters, if needed!
-# APPEAL_ADDRESS http://example.com
+ APPEAL_ADDRESS http://nanotrasen.ru/forums
 
 ##Defines the ticklag for the world.  0.9 is the normal one, 0.5 is smoother.
 TICKLAG 0.5
@@ -173,19 +173,19 @@ TICKCOMP 1
 SOCKET_TALK 0
 
 ## Uncomment this to ban use of ToR
-#TOR_BAN
+TOR_BAN
 
 ## Comment this out to disable automuting
 #AUTOMUTE_ON
 
 ## How long the delay is before the Away Mission gate opens. Default is half an hour.
-GATEWAY_DELAY 18000
+GATEWAY_DELAY 1
 
 ## Remove the # to give assistants maint access.
-#ASSISTANT_MAINT
+ASSISTANT_MAINT
 
 ## Uncomment to restrict non-admins from using humanoid alien races
-USEALIENWHITELIST
+#USEALIENWHITELIST
 
 ## Location of the nudge.py script
 NUDGE_SCRIPT_PATH nudge.py

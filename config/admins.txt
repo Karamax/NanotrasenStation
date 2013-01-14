@@ -1,8 +1,13 @@
-tehdrama - Game Master
-nanodesu - Game Master
+tehdrama - Host
+nanodesu - Host
 heroin84 - Game Master
-fixer32 - Game Master
-alekscr - Game Admin
-darkstalkerdarkfold - Game Admin
-lydee - Game Admin
+fixer32 - Game Admin
+lydee - Game Master
 xpanda - Game Admin
+holyblackcat - Game Admin
+alekscr - Admin Candidate
+murmillo - Admin Candidate
+mic_lol - Admin Candidate
+lolka - Admin Candidate
+mishtvann - Admin Candidate
+ololoshka98rus - Admin Candidate
