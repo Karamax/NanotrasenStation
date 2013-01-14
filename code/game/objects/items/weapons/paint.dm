@@ -65,7 +65,7 @@ var/global/list/cached_icons = list()
 
 	remover
 		paint_type = "remover"
-/*
+
 /obj/item/weapon/paint
 	name = "Paint Can"
 	desc = "Used to recolor floors and walls. Can not be removed by the janitor."
@@ -161,7 +161,6 @@ var/global/list/cached_icons = list()
 		if(istype(target) && target.icon != initial(target.icon))
 			target.icon = initial(target.icon)
 		return
-*/
 
 datum/reagent/paint
 	name = "Paint"
