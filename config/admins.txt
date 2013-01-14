@@ -5,7 +5,6 @@ fixer32 - Game Admin
 lydee - Game Master
 xpanda - Game Admin
 holyblackcat - Game Admin
-alekscr - Admin Candidate
 murmillo - Admin Candidate
 mic_lol - Admin Candidate
 lolka - Admin Candidate
