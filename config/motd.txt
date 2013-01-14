@@ -4,9 +4,9 @@
 -<i>This server is running <a href="http://baystation12.net/">Baystation 12's</a> modification of the <a href="http://nanotrasen.com/">/tg/station13</a> SS13 code.</i>
 <br><br>
 <strong><a href="http://nanotrasen.ru">Сайт нашего сервера</a></strong><br>
-<strong><a href="http://nanotrasen.ru/forums/">Сайт нашего сервера</a></strong><br>
-<strong><a href="http://baystation12.net/wiki/">Английская Wiki</a></strong><br>
-<strong><a href="http://wiki.nanotrasen.ru/wiki">Русская Wiki</a></strong><br>
+<strong><a href="http://forum.nanotrasen.ru">Форум нашего сервера</a></strong><br>
+<strong><a href="http://baystation12.net/wiki/">Английска&#255; Wiki</a></strong><br>
+<strong><a href="http://wiki.nanotrasen.ru">Русска&#255; Wiki</a></strong><br>
 <strong><a href="https://github.com/tehdrama/NanotrasenStation/issues">Наш багтрекер</a></strong><br>
 <strong><a href="http://wiki.nanotrasen.ru/wiki/Rules">Правила</a></strong>
 <br><br>
