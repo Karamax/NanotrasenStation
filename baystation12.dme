@@ -153,6 +153,7 @@
 #include "code\datums\diseases\advance\symptoms\headache.dm"
 #include "code\datums\diseases\advance\symptoms\heal.dm"
 #include "code\datums\diseases\advance\symptoms\itching.dm"
+#include "code\datums\diseases\advance\symptoms\poo.dm"
 #include "code\datums\diseases\advance\symptoms\shivering.dm"
 #include "code\datums\diseases\advance\symptoms\sneeze.dm"
 #include "code\datums\diseases\advance\symptoms\symptoms.dm"

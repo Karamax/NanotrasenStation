@@ -1519,6 +1519,9 @@ var/const/BLOOD_VOLUME_SURVIVE = 122
 			if (getToxLoss() >= 45 && nutrition > 20)
 				vomit()
 
+			if (nutrition > 401)
+				poo()
+
 		//0.1% chance of playing a scary sound to someone who's in complete darkness
 		if(isturf(loc) && rand(1,1000) == 1)
 			var/turf/currentTurf = loc

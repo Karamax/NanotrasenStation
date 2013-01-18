@@ -504,6 +504,16 @@ its easier to just keep the beam vertical.
 			this.viruses += newDisease
 			newDisease.holder = this
 
+/atom/proc/add_poo_floor(mob/living/carbon/M as mob)
+	if( istype(src, /turf/simulated) )
+		var/obj/effect/decal/cleanable/poo/this = new /obj/effect/decal/cleanable/poo(src)
+
+		for(var/datum/disease/D in M.viruses)
+			var/datum/disease/newDisease = D.Copy(1)
+			this.viruses += newDisease
+			newDisease.holder = this
+
+
 // Only adds blood on the floor -- Skie
 /atom/proc/add_blood_floor(mob/living/carbon/M as mob)
 	if( istype(M, /mob/living/carbon/monkey) || istype(M, /mob/living/carbon/human))
