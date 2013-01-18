@@ -90,3 +90,31 @@
 	icon_state = "mucus"
 	random_icon_states = list("mucus")
 	var/datum/disease2/disease/virus2 = null
+
+/obj/effect/decal/cleanable/poo
+	name = "poo"
+	desc = "It's brown and gooey."
+	gender = PLURAL
+	density = 0
+	anchored = 1
+	layer = 2
+	icon = 'icons/effects/blood.dmi'
+	icon_state = "poo1"
+	random_icon_states = list("poo1", "poo2", "poo3", "poo4", "poo5", "poo6")
+	var/list/viruses = list()
+	blood_DNA = list()
+	var/datum/disease2/disease/virus2 = null
+
+
+/obj/effect/decal/cleanable/poo/Del()
+	for(var/datum/disease/D in viruses)
+		D.cure(0)
+	..()
+
+/obj/effect/decal/cleanable/poo/New()
+	..()
+	if(src.type == /obj/effect/decal/cleanable/poo)
+		if(src.loc && isturf(src.loc))
+			for(var/obj/effect/decal/cleanable/poo/B in src.loc)
+				if(B != src)
+					del(B)
