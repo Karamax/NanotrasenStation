@@ -605,8 +605,8 @@
 	product_slogans = "Space cigs taste good like a cigarette should.;I'd rather toolbox than switch.;Smoke!;Don't believe the reports - smoke today!"
 	vend_delay = 34
 	product_hidden = "/obj/item/weapon/lighter/zippo"
-	product_hideamt = "4"
-	product_coin = "/obj/item/clothing/mask/cigarette/cigar/havana"
+	product_hideamt = "4;4"
+	product_coin = "/obj/item/clothing/mask/cigarette/cigar/havana,/obj/item/clothing/mask/cigarette/cigar/deluxe"
 	product_coin_amt = "2"
 	product_ads = "Probably not bad for you!;Don't believe the scientists!;It's good for you!;Don't quit, buy more!;Smoke!;Nicotine heaven.;Best cigarettes since 2150.;Award-winning cigs."
 

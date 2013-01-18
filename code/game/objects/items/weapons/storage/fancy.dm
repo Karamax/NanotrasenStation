@@ -201,3 +201,11 @@
 	desc = "A packet of six imported DromedaryCo cancer sticks. A label on the packaging reads, \"Wouldn't a slow death make a change?\""
 	icon_state = "Dpacket"
 	item_state = "Dpacket"
+
+/obj/item/weapon/storage/fancy/cigarettes/deluxe
+	name = "Ultra-Deluxe Cigar Packet"
+	desc = "A packet of six Ultra-Deluxe Cigars"
+	icon = 'icons/obj/cigars.dmi'
+	icon_state = "cigarpacket"
+	item_state = "cigarpacket"
+	can_hold = list("/obj/item/clothing/mask/cigarette/cigar/deluxe")

@@ -204,6 +204,14 @@ CIGARETTE PACKETS ARE IN FANCY.DM
 	smoketime = 1500
 	chem_volume = 20
 
+/obj/item/clothing/mask/cigarette/cigar/deluxe
+	name = "Ultra-Deluxe Cigar"
+	desc = "Best tobacco, at least on this station"
+	icon = 'icons/obj/cigars.dmi'
+	icon_state = "cigar3off"
+	icon_on = "cigar3on"
+	icon_off = "cigar3off"
+
 /obj/item/clothing/mask/cigarette/cigar/cohiba
 	name = "Cohiba Robusto Cigar"
 	desc = "There's little more you could want from a cigar."
