@@ -207,10 +207,11 @@ CIGARETTE PACKETS ARE IN FANCY.DM
 /obj/item/clothing/mask/cigarette/cigar/deluxe
 	name = "Ultra-Deluxe Cigar"
 	desc = "Best tobacco, at least on this station"
-	icon = 'icons/obj/cigars.dmi'
 	icon_state = "cigar3off"
 	icon_on = "cigar3on"
 	icon_off = "cigar3off"
+	smoketime = 7200
+	chem_volume = 30
 
 /obj/item/clothing/mask/cigarette/cigar/cohiba
 	name = "Cohiba Robusto Cigar"
@@ -218,6 +219,7 @@ CIGARETTE PACKETS ARE IN FANCY.DM
 	icon_state = "cigar2off"
 	icon_on = "cigar2on"
 	icon_off = "cigar2off"
+
 
 /obj/item/clothing/mask/cigarette/cigar/havana
 	name = "Premium Havanian Cigar"
