@@ -173,7 +173,7 @@ TICKCOMP 1
 SOCKET_TALK 0
 
 ## Uncomment this to ban use of ToR
-TOR_BAN
+#TOR_BAN
 
 ## Comment this out to disable automuting
 #AUTOMUTE_ON
