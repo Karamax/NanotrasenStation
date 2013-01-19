@@ -51,6 +51,7 @@
 	data_core = new /obj/effect/datacore()
 	paiController = new /datum/paiController()
 
+	world.log << "Connecting to DB..."
 	if(!setup_database_connection())
 		world.log << "Your server failed to establish a connection with the feedback database."
 	else
@@ -75,11 +76,13 @@
 
 	src.update_status()
 
+	world.log << "Creating master controller..."
 	master_controller = new /datum/controller/game_controller()
 	spawn(-1)
 		master_controller.setup()
 		lighting_controller.Initialize()
 
+	world.log << "Processing tele locations..."
 	process_teleport_locs()			//Sets up the wizard teleport locations
 	process_ghost_teleport_locs()	//Sets up ghost teleport locations.
 	sleep_offline = 1
@@ -89,6 +92,8 @@
 			ToRban_autoupdate()
 		if(config.kick_inactive)
 			KickInactiveClients()
+
+	world.log << "World.new complete!"
 
 #undef RECOMMENDED_VERSION
 
