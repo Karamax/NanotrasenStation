@@ -202,6 +202,12 @@
 	icon_state = "Dpacket"
 	item_state = "Dpacket"
 
+/obj/item/weapon/storage/fancy/cigarettes/vogue
+	name = "Vogue Menthe"
+	desc = "A packet of six imported Vogue Menthe cigarettes. A label on the packaging reads, \"Wouldn't a slow death make a change?\""
+	icon_state = "vogue"
+	item_state = "vogue"
+
 /obj/item/weapon/storage/fancy/cigarettes/deluxe
 	name = "Ultra-Deluxe Cigar Packet"
 	desc = "A packet of six Ultra-Deluxe Cigars"

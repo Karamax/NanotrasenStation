@@ -600,8 +600,8 @@
 	name = "Cigarette machine" //OCD had to be uppercase to look nice with the new formating
 	desc = "If you want to get cancer, might as well do it in style"
 	icon_state = "cigs"
-	product_paths = "/obj/item/weapon/storage/fancy/cigarettes;/obj/item/weapon/storage/box/matches;/obj/item/weapon/lighter/random"
-	product_amounts = "10;10;4"
+	product_paths = "/obj/item/weapon/storage/fancy/cigarettes;/obj/item/weapon/storage/fancy/cigarettes/vogue;/obj/item/weapon/storage/fancy/cigarettes/dromedaryco;/obj/item/weapon/storage/box/matches;/obj/item/weapon/lighter/random"
+	product_amounts = "10;10;10;4"
 	product_slogans = "Space cigs taste good like a cigarette should.;I'd rather toolbox than switch.;Smoke!;Don't believe the reports - smoke today!"
 	vend_delay = 34
 	product_hidden = "/obj/item/weapon/lighter/zippo"
