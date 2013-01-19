@@ -2,8 +2,6 @@
 	name = "Cola"
 	desc = "Cola. Traditional."
 	icon_state = "colar"
-	var/nutriment = 0
-	var/nutriment_new = 6
 
 	New()
 		..()
