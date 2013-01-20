@@ -466,3 +466,8 @@
 	if(!ticker.mode.name == "monkey")	return 0
 	return 1
 
+/mob/living/carbon/monkey/ignorant
+	desc = "This monkey silently ignores you"
+
+/mob/living/carbon/monkey/ignorant/update_canmove()
+	return 0
