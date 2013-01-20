@@ -24,6 +24,7 @@
 
 	make_datum_references_lists()	//initialises global lists for referencing frequently used datums (so that we only ever do it once)
 
+	world.log << "Loading config and bans..."
 	load_configuration()
 	load_mode()
 	load_motd()
@@ -80,6 +81,7 @@
 	master_controller = new /datum/controller/game_controller()
 	spawn(-1)
 		master_controller.setup()
+		world.log << "Initializing lights..."
 		lighting_controller.Initialize()
 
 	world.log << "Processing tele locations..."
