@@ -292,6 +292,7 @@
 			spawn(600)			//ewww - this is very very bad
 				if(L.&& L.client)
 					L.client.played = 0
+	newarea.playmusic(L,newarea)
 
 /area/proc/gravitychange(var/gravitystate = 0, var/area/A)
 
