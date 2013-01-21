@@ -60,7 +60,11 @@ proc/process_teleport_locs()
 	for(var/area/AR in world)
 		if(istype(AR, /area/shuttle) || istype(AR, /area/syndicate_station) || istype(AR, /area/wizard_station)) continue
 		if(teleportlocs.Find(AR.name)) continue
-		var/turf/picked = pick(get_area_turfs(AR.type))
+		var/list/turfs = get_area_turfs(AR.type)
+		if(turfs.len<1)
+			world.log << "DEBUG: Area [AR] with type [AR.type] has no turfs"
+			return
+		var/turf/picked = pick(turfs)
 		if (picked.z == 1)
 			teleportlocs += AR.name
 			teleportlocs[AR.name] = AR
@@ -84,7 +88,11 @@ proc/process_ghost_teleport_locs()
 		if(istype(AR, /area/turret_protected/aisat) || istype(AR, /area/derelict) || istype(AR, /area/tdome))
 			ghostteleportlocs += AR.name
 			ghostteleportlocs[AR.name] = AR
-		var/turf/picked = pick(get_area_turfs(AR.type))
+		var/list/turfs = get_area_turfs(AR.type)
+		if(turfs.len<1)
+			world.log << "DEBUG: Area [AR] with type [AR.type] has not turfs"
+			return
+		var/turf/picked = pick(turfs)
 		if (picked.z == 1 || picked.z == 5 || picked.z == 3)
 			ghostteleportlocs += AR.name
 			ghostteleportlocs[AR.name] = AR
