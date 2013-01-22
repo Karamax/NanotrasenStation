@@ -1594,7 +1594,13 @@ datum
 				M.hallucination += 10
 				..()
 				return
-
+// Tramadol pill require this - Nanodesu
+		tramadol
+			name = "Tramadol"
+			id = "tramadol"
+			description = "A powerfull painkiller."
+			reagent_state = SOLID
+			color = "#808080" // rgb: 128, 128, 128
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
