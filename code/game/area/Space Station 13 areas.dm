@@ -90,7 +90,7 @@ proc/process_ghost_teleport_locs()
 			ghostteleportlocs[AR.name] = AR
 		var/list/turfs = get_area_turfs(AR.type)
 		if(turfs.len<1)
-			world.log << "DEBUG: Area [AR] with type [AR.type] has not turfs"
+			world.log << "DEBUG: Area [AR] with type [AR.type] has no turfs"
 			return
 		var/turf/picked = pick(turfs)
 		if (picked.z == 1 || picked.z == 5 || picked.z == 3)
