@@ -500,7 +500,7 @@ var/global/floorIsLava = 0
 		<A href='?src=\ref[src];create_mob=1'>Create Mob</A><br>
 		"}
 
-	usr << browse(dat, "window=admin2;size=210x180")
+	usr << browse(dat, "window=admin2;size=210x200")
 	return
 
 /datum/admins/proc/Secrets()
