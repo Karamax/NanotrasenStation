@@ -35,6 +35,8 @@
 	return
 
 /obj/structure/stool/MouseDrop(atom/over_object)
+	if(!src.icon_state || src.icon_state != "stool") // This is ugly, I know. But we need quickfix for janicarts - Nanodesu
+		return
 	if (istype(over_object, /mob/living/carbon/human))
 		var/mob/living/carbon/human/H = over_object
 		var/obj/item/weapon/stool/S = new/obj/item/weapon/stool()
