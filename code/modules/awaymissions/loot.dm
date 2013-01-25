@@ -13,6 +13,9 @@
 			var/lootspawn = text2path(pick(things))
 			if(!lootdoubles)
 				things.Remove(lootspawn)
+			if(!lootspawn)
+				world.log << "DEBUG: null loot in [things]"
+				return
 
 			new lootspawn(get_turf(src))
 	del(src)
