@@ -4,6 +4,7 @@
 	icon = 'icons/obj/bloodpack.dmi'
 	icon_state = "empty"
 	volume = 200
+	flags = OPENCONTAINER //Allow blood transfer
 
 	var/blood_type = null
 
