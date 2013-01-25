@@ -2,7 +2,7 @@
 	name = "Military Seegway"
 	desc = "Military seegway SS-12"
 	icon = 'code/fixercode/forFix.dmi'
-	icon_state = "seegway_stop"
+	icon_state = "seegway"
 	anchored = 1
 	density = 1
 
