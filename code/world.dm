@@ -80,6 +80,7 @@
 	world.log << "Creating master controller..."
 	master_controller = new /datum/controller/game_controller()
 	spawn(-1)
+		world.log << "Master controller setup()..."
 		master_controller.setup()
 		world.log << "Initializing lights..."
 		lighting_controller.Initialize()
