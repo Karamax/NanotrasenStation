@@ -19,7 +19,7 @@ Bonus
 //////////////////////////////////////
 */
 
-/datum/symptom/vomit
+/datum/symptom/poo
 
 	name = "Poo"
 	stealth = -2
