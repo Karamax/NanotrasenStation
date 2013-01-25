@@ -19,7 +19,8 @@
 
 	New()
 		..()
-		reagents.add_reagent("nutriment", 6)
+		reagents.add_reagent("nutriment", 2)
+		reagents.add_reagent("mentos", 30)
 
 
 /obj/item/weapon/reagent_containers/food/drinks/bottle/realcola/attackby(obj/item/W as obj, mob/user as mob)
@@ -49,4 +50,14 @@
 	icon = 'blood.dmi'
 	icon_state = "cola"
 	random_icon_states = list("cola")
+
+#define SOLID 1
+#define LIQUID 2
+#define GAS 3
+/datum/reagent/mentos //Bcause this game has no CO2 reagent in carbonated stuff, so let's make things easy
+	name = "Space Mentos patented formula"
+	id = "mentos"
+	description = "Causes rapid carbon dioxide release from carbonated beverages"
+	reagent_state = SOLID
+	color = "#FFFFFF" // rgb: 255,255,255
 
