@@ -133,6 +133,7 @@ datum
 
 				set background = 1
 				world << "\red \b Processing Geometry..."
+				world.log << "ZAS_FEA: Processing Geometry..."
 				sleep(-1)
 
 				var/start_time = world.timeofday
@@ -146,6 +147,7 @@ datum
 					S.update_air_properties()
 
 				world << "\red \b Geometry processed in [time2text(world.timeofday-start_time, "mm:ss")] minutes!"
+				world.log << "ZAS_FEA: Geometry processed!"
 //				spawn start()
 
 			proc/start()
