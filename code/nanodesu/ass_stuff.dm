@@ -4,7 +4,7 @@
 /obj/item/weapon/reagent_containers/food/snacks/human/ass //yes, this is the same as meat. I might do something different in future
 	name = "ass"
 	desc = "A human ass. Its made of meat."
-	icon = 'icons/obj/ass_stuff.dmi'
+	icon = 'icons/nanotrasen/ass_stuff.dmi'
 	icon_state = "ass"
 	New()
 		..()
@@ -14,7 +14,7 @@
 /obj/item/weapon/reagent_containers/food/snacks/human/assburger
 	name = "-assburger"
 	desc = "A bloody assburger."
-	icon = 'icons/obj/ass_stuff.dmi'
+	icon = 'icons/nanotrasen/ass_stuff.dmi'
 	icon_state = "assburger"
 	New()
 		..()

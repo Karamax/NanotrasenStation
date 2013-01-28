@@ -1,7 +1,7 @@
 /obj/structure/stool_bar
 	name = "stool"
 	desc = "Apply butt."
-	icon = 'code/fixercode/forFix.dmi'
+	icon = 'icons/nanotrasen/stool.dmi'
 	icon_state = "bar_stool"
 	anchored = 1.0
 	flags = FPRINT

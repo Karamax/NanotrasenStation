@@ -1,7 +1,7 @@
 /obj/structure/stool/bed/chair/seegway
 	name = "Military Segway"
 	desc = "Military segway SS-12"
-	icon = 'code/fixercode/forFix.dmi'
+	icon = 'icons/nanotrasen/segway.dmi'
 	icon_state = "seegway"
 	anchored = 1
 	density = 1

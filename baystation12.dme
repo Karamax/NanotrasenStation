@@ -6,7 +6,6 @@
 // BEGIN_FILE_DIR
 #define FILE_DIR .
 #define FILE_DIR "code"
-#define FILE_DIR "code/fixercode"
 #define FILE_DIR "code/TriDimension"
 #define FILE_DIR "code/WorkInProgress"
 #define FILE_DIR "code/WorkInProgress/Cael_Aislinn"
@@ -22,6 +21,7 @@
 #define FILE_DIR "icons/misc"
 #define FILE_DIR "icons/mob"
 #define FILE_DIR "icons/mob/human_races"
+#define FILE_DIR "icons/nanotrasen"
 #define FILE_DIR "icons/obj"
 #define FILE_DIR "icons/obj/assemblies"
 #define FILE_DIR "icons/obj/atmospherics"

@@ -14,7 +14,7 @@
 /obj/item/weapon/reagent_containers/food/snacks/mentos
 	name = "Mentos"
 	desc = "Space Mentos."
-	icon = 'icons/obj/mentos.dmi'
+	icon = 'icons/nanotrasen/mentos.dmi'
 	icon_state = "mentos"
 
 	New()
