@@ -30,10 +30,11 @@
 
 
 /mob/var/masturbating = 0
+/mob/var/has_ass = 1
 /mob/living/carbon/human/verb/masturbate()
 	set name = "Masturbate Onto"
 	set category = "Fun"
-	set hidden = 1
+	set hidden = 0
 
 	if (!src)
 		world.log << "DEBUG: The VOID tried to masturbate!"
@@ -44,7 +45,11 @@
 		return
 
 	if (!src.loc)
-		src << "You are located nowhere. You cannot masturbate."
+		src << "You are nowhere. You cannot masturbate."
+		return
+
+	if (!has_ass)
+		src << "You already lost your ass doing this."
 		return
 
 	if (masturbating)
@@ -58,7 +63,7 @@
 		dest += M
 
 	if (dest.len<1)
-		src << "Nobody to masturbate here" //Not happens - you can always masturbate to yourself!
+		src << "There is no one here to masturbate." //Not happens - you can always masturbate to yourself!
 		return
 
 	target = input("Please, select a target!", "Masturbate onto", null, null) as null|anything in dest
@@ -66,8 +71,19 @@
 	if (!target)//Make sure we actually have a target
 		return
 	else
-		//var/mob/D = dest[target] //Destination mob - FIX NOTWORKS
-		//var/mob/A = src			 //Source mob
-		// You're masturbating onto D - undef
-		//TODO
-		src << "\red You're masturbating onto [target]"
+		src.masturbating = 1
+		src.visible_message("[src] just starts masturbating onto [target]!","You start masturbating onto [target].","You hear some cyclic noise around. It sounds like \"fap-fap-fap\"...")
+		sleep(20)
+		src << "Suddently your ass becomes loose..."
+		sleep(20)
+		src << "\red After another powerful friction, your ass fell apart from body!"
+		src.visible_message("[src] just loses an ass!","\red After another powerful friction, your ass fell apart from body!")
+		playsound(src.loc,'aargh.ogg',50,1)
+		var/obj/item/yourass = new /obj/item/weapon/reagent_containers/food/snacks/human/ass(src.loc)
+		if (!src.put_in_any_hand_if_possible(yourass,0))
+			src << "Your hands are full, you can't hold your ass."
+		src.has_ass = 0
+		spawn(20)
+			src.masturbating = 0
+			playsound(src.loc,'sadtrombone.ogg',40,1)
+
